@@ -13,12 +13,9 @@ spec:
     repoURL: https://github.com/kadirsahan/kafka-connect.git
     targetRevision: main
     path: .
-    helm:
-      valueFiles:
-        - values-local.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: kafka-connect
+    namespace: kraft-kafka-connect
   syncPolicy:
     automated:
       prune: true
