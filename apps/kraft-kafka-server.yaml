@@ -13,6 +13,9 @@ spec:
     repoURL: https://github.com/kadirsahan/kraft-kafka-server.git
     targetRevision: main
     path: .
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: kraft-kafka
